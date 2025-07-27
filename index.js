@@ -1,7 +1,6 @@
-const express=require("express");
-const app = express();
-
-const path= require("path");
+const express=require("express")
+const app = express()
+const path= require("path")
 const Chat= require("./models/chat.js")
 const methodOverride = require("method-override");
 
@@ -82,11 +81,9 @@ app.delete("/chats/:id",async(req,res)=>{
 
 })
 
-
 app.get("/",(req,res)=>{
     res.send("root is working");
 })
-
 
 app.listen(8080,()=>{
     console.log("server is listening on port 8080");
